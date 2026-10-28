@@ -1,26 +1,33 @@
-# Actividad R2 - Pablo Morell
+# Aplicación de escritorio - Interacción cámara - Pablo Morell
 
-## HealthySmile - Idea y objetivo
-El objetivo de esta practica es hacer un software para animar a los niños a mirarse los dientes y tener una buena higiene bucodental
+## Requisitos
+* Camara
+* Conexión a internet para descargas P5.js y MediaPipe
+* NodeJS y npm
+* Rust y cargo
+* La herramientas de C++ y WebView2: https://v2.tauri.app/start/prerequisites/
 
-## Flujo de interacción
-Cuando se abre la aplicación nos encontramos una tematica de halloween, ademas de un boton que nos pide permiso para acceder a la camara.
-A partir de ese momento es necesario para abrir la boca y ver progreso, ya que con el paso del tiempo aparecen mas y mas particulas, como las burbujas, calabazas y fantasmas.
+## Instalación y ejecución
+**Paso 1**
+Descarga o clona el repositorio
 
-## Bibloteca usada para la detección de la cara.
-Para la detección de la cara estuve barajando investigando con IA entre las diferentes posibilidades que existen como MediaPipe, ml5, tensowflow face Landmarks etc.
-Finalmente me decante por mediapipe porque por su documentación y al ser desarrollada por google me dio mas confianza.
+**Paso 2**
+Ubicate en la capeta e instala las dependencias con el comando
+```bash
+npm ci
+```
 
-## Estetica
-Para la estetica y colores use a la IA para que me listara los diferentes colores tipicos de halloween, a parte de eso la use como fuente de ideas, como por ejemplo usar particulas con forma de fantasmas o la propia calabaza.
+**Paso 3**
+Ejecuta la aplicación es escritorio con el comando
+```bash
+npx tauri dev
+```
 
-## Conversión a Tauri
-En mi caso la conversión a tauri no me resulto complicada, ya que he trabajado con tauri previamente para varios proyectos personales.
-
-Para crear una aplicación con tauri, necesitamos node.js y rust.
-
-Haciendo uso de la CLI y el comando ``` npx tauri init --ci --app-name PEC2_morell --window-title PEC2_morell --frontend-dist ../frontend``` podemos generar el proyecto.
-
+## Estructura resumida del proyecto
+frontend/       HTML, css y JS
+src-tauri/      Código y configuración de la aplicación de escritorio.
+package.json    Dependencias de nodejs
+README.md       Instrucciones del proyecto
 
 ## Contenido multimedia usado
 Burbujas: https://freesound.org/people/Abacagi/sounds/497198/

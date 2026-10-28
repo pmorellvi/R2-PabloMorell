@@ -1,0 +1,16 @@
+{
+  "name": "pec2",
+  "version": "1.0.0",
+  "description": "Burbujas: https://freesound.org/people/Abacagi/sounds/497198/ Pocima bebiendo: https://freesound.org/people/Jamius/sounds/41529/ Calabaza: https://github.com/hfg-gmuend/openmoji/blob/master/color/svg/1F383.svg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4"
+  }
+}
